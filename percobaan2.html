@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+    function showalert(){
+        var panjang = document.getElementById("panjang").value;
+        var lebar = document.getElementById("lebar").value;
+        var luas = panjang*lebar;
+        document.getElementById("luas").innerHTML=luas;
+    }
+</script>
+
+<body>
+    <div class="right">      
+        <h1>Rumus Luas</h1> 
+        <form action="javascript:void(0)">
+            
+            panjang <br>
+            <input type="panjang" id="panjang" class="warnaputih" name="panjang"> <br>
+            lebar    <br>
+            <input type="lebar" id="lebar" class="warnaputih" name="lebar"> <br>
+            <input type="submit" onclick= "showalert()">
+          </form> 
+          <div id="luas"></div>
+     </div>
+</body>
+</html>
